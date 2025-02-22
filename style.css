@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hidden{display: none;}
+.rel-postn{position: relative;}
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 100vw;    min-height: 100vh;
+    background: linear-gradient(lightgreen, skyblue) no-repeat;
+    font-family: 'Manrope', sans-serif;
+    /* height: 500%; */
+}
+.logo{
+    max-width: 11rem;    
+    max-height: 5rem;
+    transition: all 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+
+header.TopMost{
+    min-width: 100%;   max-height: 80px;
+    padding: 0.5rem 1rem;  
+    display: flex;  flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#RtH{display: none;}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul.desktop{
+    list-style: none;
+    min-width: 700px;
+    padding-right: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+nav ul li{
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-shadow: 10px 10px 10px green;
+} 
+
+.btn{
+    width: 10.5rem;
+    height: 3rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    background: lightgreen;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.btn:hover{
+    box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.2);
+    background: rgb(3, 199, 3);
+    border: 1px solid #fff;
+    text-shadow: 8px #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13%;
+    padding-bottom: 7%;
+}
+.container h2{
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    width: 800px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    transition: all 0.5s;
+}
+
+.hero-btn{
+    text-transform: capitalize;
+    margin-top: 5%;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+.hero-btn:hover{
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.fa-arrow-right-long{
+    transition: all 0.5s;
+}
+.fa-arrow-right-long:hover{
+    transform: rotate(180deg);
+}
+
+button{
+    cursor: pointer;
+}
+
+.side-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    width: 300px;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 0;
+}
+
+.btn-close{
+    position: absolute;     right: 1rem;     top: 1rem;
+    display: none;
+    color: #fff;
+}
+.btn2{
+    width: 100%;
+    height: 50px;
+    background: rgb(11, 202, 11);
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: #FFF;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn2:hover{
+    border: 2px solid #f5f5f5;
+    background: lightgreen;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .desktop{
+        display: none;        
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        min-width: 100vw;    min-height: 100vh;
+        background: linear-gradient(lightgreen, skyblue) no-repeat;
+        font-family: 'Manrope', sans-serif;
+        /* height: 500%; */
+        /* overflow: hidden; */
+    }
+    .container h2{
+        max-width: 350px;
+        font-size: 3rem;
+        margin-bottom: 10%;
+    }
+
+    .container{
+        width: 100%; height: 100vh;
+        display: flex;  flex-flow: column nowrap;  gap: 3rem;
+        justify-content: center;    align-items: center;
+    }
+}
+
+@media (max-width: 765px) and (min-width: 220px) {
+    body{
+        padding: 0;
+        margin: 0;
+        min-width: 100vw;    min-height: 100vh;
+        background: linear-gradient(lightgreen, skyblue) no-repeat;
+        font-family: 'Manrope', sans-serif;
+        /* height: 500%; */
+    }
+    #RtH{
+        display: inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+    .overlay {
+        position: absolute;    top: 0;  left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        z-index: 2;
+    }
+    .aside-content {
+      background-color: White;
+      overflow: auto;
+      right: -30rem;
+      top: 0;
+      z-index: 4; 
+      transition: all .6s; 
+      margin-bottom: 0;
+    }
+    .right-nav{
+        right: 0rem;
+        top: 0;
+        height: 100vh;
+        position: fixed;
+        width: 50vw;
+        padding: 1rem;
+        z-index: 4; 
+        display: flex;   flex-flow: column nowrap;
+        background: linear-gradient(lightgreen, skyblue) no-repeat;
+    }
+    .btn-close{
+        position: absolute;     right: 1rem;     top: 1rem;
+        display: none;
+        color: #fff;
+    }
+}

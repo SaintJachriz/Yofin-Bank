@@ -1,0 +1,54 @@
+
+body{
+    margin: 0;      padding: 0;
+    width: 100vw; min-height: 100vh;
+    background: linear-gradient(180deg, rgb(12, 55, 3), rgb(5, 28, 4), rgb(4, 19, 1))
+}
+:root {
+    --color-heading:white;
+    --color-mid-green-theme: rgb(27, 186, 51);
+}
+.rel-postn{position: relative;}
+.hidden{display: none;}
+.centeredDiv{
+  display: flex;  flex-flow: column nowrap;
+  justify-content: center;    align-items: center; 
+}
+form.loginTab{
+    min-width: 14rem;
+    margin: 2rem 0.5rem
+}
+form.loginTab>h2{
+    color: var(--color-heading);
+    margin-bottom: 1rem;
+}
+form.loginTab label{
+    color: var(--color-heading);
+    font-size: small;
+}
+form.loginTab input[type="checkbox"]:checked {
+    background-color: var(--color-mid-green-theme);
+}
+button.btn{
+    background-color:var(--color-mid-green-theme);
+    border: 1px solid var(--color-mid-green-theme);
+    min-width: 100%;
+}
+
+
+
+
+
+
+@media (min-width:735px){
+    .loginTab{
+        width: 60%;
+        margin: 5rem auto 1rem; padding: 2.5rem;
+        border: 1px solid  var(--color-mid-green-theme);
+        border-radius: 1rem;
+    }
+    button.btn{
+        min-width: 100%;
+    }
+    
+}

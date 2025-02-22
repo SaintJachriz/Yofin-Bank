@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dash.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="first">
+      <li onclick="Nav()" class="nav-bar"><i class="fa-solid fa-bars"></i></li>
+      <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+      <!-- <input type="text" class="inp"> -->
+      </ul>
+
+      <ul class="second">
+        <li><i class="fa-solid fa-user"></i></li>
+        <li><i class="fa-regular fa-bell"></i></li>
+      </ul>
+    </nav>
+
+    <ul class="side">
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Transaction</a></li>
+      <li><a href="#">Recharge</a></li>
+      <li><a href="#">Access Transfer</a></li>
+      <li><a href="#">Transfer To Other Bank</a></li>
+      <li><a href="#">Bill Payment</a></li>
+    </ul>
+
+    <div class="userNameInput center">
+      <p class="myP"></p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <p>Account Balance</p>
+      <p class="amount">$10,000,000</p>
+      <li onclick="Hide()"><i class="fa-solid fa-eye"></i></li>
+      <li onclick="Show()"><i class="fa-solid fa-eye-slash"></i></li>
+    </div>
+
+    <table border="1">
+
+      <!-- Table Row 1 -->
+      <tr>
+          <td>Access Transfer</td>
+          <td>Other Bank Transfers</td>
+      </tr>
+
+      <!-- Table Row 2 -->
+      <tr>
+          <td>Mobile Topup</td>
+          <td>Bill Payment</td>
+      </tr>
+
+      <!-- Table Row 3 -->
+      <tr>
+          <td>Loans</td>
+          <td>BreezPay</td>
+      </tr>
+  </table>
+  </main>
+
+  <p id="test"></p>
+</body>
+<script src="index.js"></script>
+</html>
